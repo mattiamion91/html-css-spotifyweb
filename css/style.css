@@ -30,12 +30,22 @@ a {
 /*left playlist*/
 
 .left-playlist-bar {
+    padding: 10px;
     background-color: cyan;
     width: 200px;
     height: calc(100vh - 100px);
 }
 
 /*main part l'unica che deve avere una scroll bar*/
+
+.upgrade-top-bar {
+    background-color: darkcyan;
+    height: 50px;
+}
+
+.scrolling-section {
+    padding: 10px;
+}
 
 .right-main-contenitor {
     background-color: cornflowerblue;
