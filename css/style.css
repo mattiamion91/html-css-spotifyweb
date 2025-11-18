@@ -24,7 +24,7 @@ a {
 }
 
 .big-main-container {
-    display: flex;
+    height: calc(100vh - 100px);display: flex;
 }
 
 /*left playlist*/
@@ -33,10 +33,22 @@ a {
     padding: 10px;
     background-color: cyan;
     width: 200px;
-    height: calc(100vh - 100px);
+    
 }
 
 /*main part l'unica che deve avere una scroll bar*/
+
+.category-bar-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
 .upgrade-top-bar {
     background-color: darkcyan;
@@ -50,8 +62,7 @@ a {
 .right-main-contenitor {
     background-color: cornflowerblue;
     width: calc(100vw - 200px);
-    height: calc(100vh - 100px);
-    overflow: auto;
+    overflow-y: auto;
 }
 
 /*barra di riproduzione musicale*/
