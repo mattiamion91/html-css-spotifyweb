@@ -5,3 +5,48 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Montserrat, 'Helvetica Neue', sans-serif;
+}
+
+/*desktop first ############################ */
+
+/*utility*/
+
+ul li {
+    list-style-type: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.big-main-container {
+    display: flex;
+}
+
+/*left playlist*/
+
+.left-playlist-bar {
+    background-color: cyan;
+    width: 200px;
+    height: calc(100vh - 100px);
+}
+
+/*main part l'unica che deve avere una scroll bar*/
+
+.right-main-contenitor {
+    background-color: cornflowerblue;
+    width: calc(100vw - 200px);
+    height: calc(100vh - 100px);
+    overflow: auto;
+}
+
+/*barra di riproduzione musicale*/
+
+.bottom-play-bar {
+    background-color: blue;
+    height: 100px;
+}
