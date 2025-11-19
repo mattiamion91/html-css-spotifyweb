@@ -46,7 +46,7 @@ a {
 
 }
 
-.home {
+.home-green {
     border-left: solid 3px greenyellow;
 }
 
@@ -107,29 +107,66 @@ li a {
 
 /*main part l'unica che deve avere una scroll bar*/
 
+.border-radius-50 {
+    border-radius: 50%;
+}
+
+.scrolling-section h2, h4 {
+    color: white;
+}
+
+.green-border {
+    border-bottom: solid 2px greenyellow;
+}
+
+nav ul li a:hover {
+    color: white
+}
+
+
+nav ul li a {
+    color: lightgrey;
+    font-weight: bold;
+}
+
 .upgrade-top-bar a {
-    display: flex;
-    justify-content: flex-end;
-    margin: 29px;
-    padding: 9px;
     color: white;
     border: solid 2px white;
     border-radius: 20px;
+    align-self: baseline;
+    padding: 10px;
+    margin: 10px 5px;
 }
 
 .category-bar-2 {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    gap: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    text-align: center;
+    color: white;
+    flex: 1 1 150px;
+    max-width: 150px;
 }
 
 .card-container {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .upgrade-top-bar {
+    display: flex;
+    justify-content: flex-end;
     background: rgba(20, 25, 35, 0.5);
     height: 100px;
     position: sticky;
@@ -151,8 +188,9 @@ li a {
 .bottom-play-bar {
     background-color: blue;
     height: 100px;
+    position: sticky;
+    bottom: 0;
 }
-
 
 /*@@@@@@@@@@@@@@@@@552x1095@@@@@@@@@@@@@@@@@*/
 
@@ -162,11 +200,12 @@ li a {
     }
 
     .right-main-contenitor {
-    
-    width: calc(100vw - 60px);
+
+        width: calc(100vw - 60px);
     }
-   
-    span, .playlist-bar {
+
+    span,
+    .playlist-bar {
         display: none;
         border-bottom: none;
     }
