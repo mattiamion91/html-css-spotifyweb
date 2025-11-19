@@ -17,7 +17,13 @@
 </head>
 
 <body>
+    
+    <!--contenitore centrale, contiene sia la parte sinistra fissa sia la parte destra con barra di scorrimento-->
+    
     <div class="big-main-container">
+        
+        <!--sezione con playlist e controlli profilo utente-->
+        
         <div class="left-playlist-bar">
             <div class="logo"><img src="./img/logo.svg" alt="logo-spotify"></div>
             <nav class="search-navbar">
@@ -48,8 +54,19 @@
                 <a href="#">John Doe</a>
             </div>
         </div>
+        
+        <!--parte destra con scorrimento verticale contiene gli ablum e le liste dell'utente-->
+       
         <div class="right-main-contenitor">
-            <div class="upgrade-top-bar"><a href="#">Effettua Upgrade</a></div>
+            
+            <!--parte alta in cui é presente un ancora per effettuare l'upgrade del piano-->
+            
+            <div class="upgrade-top-bar">
+                <a href="#">Effettua Upgrade</a>
+            </div>
+            
+            <!--navbar con i selettori classifiche, podcat, ecc-->
+            
             <nav class="category-bar">
                 <ul class="category-bar-2">
                     <li><a href="#">IN EVIDENZA</a></li>
@@ -102,6 +119,9 @@
         </div>
     </div>
     </div>
+    
+    <!--parte a pie pagina in cui é presente la play bar per il controllo della riproduzione e del volume-->
+    
     <div class="bottom-play-bar">
         <div class="playing-now"></div>
         <div class="reproduction-bar"></div>
