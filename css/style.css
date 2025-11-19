@@ -24,16 +24,64 @@ a {
 }
 
 .big-main-container {
-    height: calc(100vh - 100px);display: flex;
+    height: calc(100vh - 100px);
+    display: flex;
 }
 
 /*left playlist*/
 
+.profile-setting a {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    background-color: lightgrey;
+    color: black;
+    border: none;
+}
+
+li a {
+    display: flex;
+    align-items: center;
+
+}
+
+.installing-anchor {
+    border-bottom: solid 1px lightgray;
+}
+
+.profile-setting img {
+    height: 25px;
+    width: 25px;
+    background-color: lightgrey;
+    border-radius: 50%;
+}
+
+.left-playlist-bar a {
+    color: lightgrey;
+}
+
+.left-playlist-bar .logo {
+    width: 140px;
+}
+
+.search-navbar img {
+    width: 30px;
+}
+
 .left-playlist-bar {
-    padding: 10px;
-    background-color: cyan;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: lightgray;
+    padding: 15px;
+    background-color: black;
     width: 200px;
-    
+
 }
 
 /*main part l'unica che deve avere una scroll bar*/
@@ -70,4 +118,29 @@ a {
 .bottom-play-bar {
     background-color: blue;
     height: 100px;
+}
+
+
+/*@@@@@@@@@@@@@@@@@552x1095@@@@@@@@@@@@@@@@@*/
+
+@media only screen and (max-width: 552px) {
+    .left-playlist-bar {
+        width: 60px;
+    }
+
+    .right-main-contenitor {
+    
+    width: calc(100vw - 60px);
+    }
+   
+    span, .playlist-bar {
+        display: none;
+        border-bottom: none;
+    }
+
+    .bottom-element {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

@@ -17,56 +17,62 @@
 </head>
 
 <body>
-    
+
     <!--contenitore centrale, contiene sia la parte sinistra fissa sia la parte destra con barra di scorrimento-->
-    
+
     <div class="big-main-container">
-        
+
         <!--sezione con playlist e controlli profilo utente-->
-        
+
         <div class="left-playlist-bar">
-            <div class="logo"><img src="./img/logo.svg" alt="logo-spotify"></div>
-            <nav class="search-navbar">
-                <ul>
-                    <li class="home"><a href="#">Home</a></li>
-                    <li class="search"><a href="#">Cerca</a></li>
-                    <li class="library"><a href="#">La tua libreria</a></li>
-                </ul>
-            </nav>
-            <div class="playlist-bar">
-                <h3>PLAYLIST</h3>
-                <button>+</button>
-                <span>Crea Playlist</span>
-                <ul>
-                    <li><a href="#">Nome Paylist</a></li>
-                    <li><a href="#">Nome Paylist</a></li>
-                    <li><a href="#">Nome Paylist</a></li>
-                    <li><a href="#">Nome Paylist</a></li>
-                    <li><a href="#">Nome Paylist</a></li>
-                    <li><a href="#">Nome Paylist</a></li>
-                    <li><a href="#">Nome Paylist</a></li>
-                </ul>
+            <div class="top-element">
+                <div class="logo"><img src="./img/logo.svg" alt="logo-spotify"></div>
+                <nav class="search-navbar">
+                    <ul>
+                        <li class="home"><a href="#"><img src="./img/home.svg" alt="home"><span>Home</span></a></li>
+                        <li class="search"><a href="#"><img src="./img/search.svg" alt="search"><span>Search</span></a>
+                        </li>
+                        <li class="library"><a href="#"><img src="./img/libreria.svg" alt="libreria"><span>La tua
+                                    librearia</span></a></li>
+                    </ul>
+                </nav>
+                <div class="playlist-bar">
+                    <h3><span>PLAYLIST</span></h3>
+                    <button>+</button>
+                    <span>Crea Playlist</span>
+                    <ul>
+                        <li><a href="#">Nome Paylist</a></li>
+                        <li><a href="#">Nome Paylist</a></li>
+                        <li><a href="#">Nome Paylist</a></li>
+                        <li><a href="#">Nome Paylist</a></li>
+                        <li><a href="#">Nome Paylist</a></li>
+                        <li><a href="#">Nome Paylist</a></li>
+                        <li><a href="#">Nome Paylist</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="installing-anchor">
-                <a href="#">Installa app</a>
-            </div>
-            <div class="profile-setting">
-                <a href="#">John Doe</a>
+            <div class="bottom-element">
+                <div class="installing-anchor">
+                    <a href="#"><i class="fa-regular fa-circle-down"></i><span>Installa app</span></a>
+                </div>
+                <div class="profile-setting">
+                    <a href="#"><img src="./img/profile.svg" alt="profile"><span>John Doe</span></a>
+                </div>
             </div>
         </div>
-        
+
         <!--parte destra con scorrimento verticale contiene gli ablum e le liste dell'utente-->
-       
+
         <div class="right-main-contenitor">
-            
+
             <!--parte alta in cui é presente un ancora per effettuare l'upgrade del piano-->
-            
+
             <div class="upgrade-top-bar">
                 <a href="#">Effettua Upgrade</a>
             </div>
-            
+
             <!--navbar con i selettori classifiche, podcat, ecc-->
-            
+
             <nav class="category-bar">
                 <ul class="category-bar-2">
                     <li><a href="#">IN EVIDENZA</a></li>
@@ -118,10 +124,9 @@
             </div>
         </div>
     </div>
-    </div>
-    
+
     <!--parte a pie pagina in cui é presente la play bar per il controllo della riproduzione e del volume-->
-    
+
     <div class="bottom-play-bar">
         <div class="playing-now"></div>
         <div class="reproduction-bar"></div>
