@@ -34,11 +34,10 @@ a {
 
 /*left playlist*/
 
-.playlist-bar:hover {
+ul li span:hover {
     color: white;
     cursor: pointer;
-
-}
+ }
 
 .left-playlist-bar a:hover {
     color: white;
@@ -81,7 +80,9 @@ li a {
     border-radius: 50%;
 }
 
-.left-playlist-bar a {
+.left-playlist-bar a, span {
+    padding: 3px 0;
+    font-size: 10px;
     color: lightgrey;
 }
 
@@ -146,6 +147,10 @@ nav ul li a {
     gap: 20px;
 }
 
+.card img:hover {
+    opacity: 0.5;
+}
+
 .card img {
     width: 100%;
     height: auto;
@@ -178,6 +183,7 @@ nav ul li a {
 }
 
 .right-main-contenitor {
+    font-size: 0.7rem;
     background-color: rgb(20, 25, 35);
     width: calc(100vw - 200px);
     overflow-y: auto;
@@ -185,6 +191,14 @@ nav ul li a {
 
 /*barra di riproduzione musicale*/
 
+.playing-now {
+    max-width: 100px;
+}
+
+.playing-now img {
+    width: 50%;
+    height: auto;
+}
 .bottom-play-bar {
     background-color: blue;
     height: 100px;
