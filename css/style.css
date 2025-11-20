@@ -111,7 +111,6 @@ li a {
 /*main part l'unica che deve avere una scroll bar*/
 
 .responsive-logo {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -148,6 +147,10 @@ nav ul li a {
     align-self: baseline;
     padding: 10px;
     margin: 10px 5px;
+}
+
+.upgrade-top-bar a:hover {
+    font-size: 1.05rem;
 }
 
 .category-bar-2 {
@@ -235,7 +238,6 @@ nav ul li a {
 @media only screen and (max-width: 552px) {
     
     .responsive-logo {
-        padding: 15px;
         display: block;
     }
     
