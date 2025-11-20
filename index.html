@@ -26,7 +26,9 @@
 
         <section class="left-playlist-bar">
             <div class="top-element">
-                <div class="logo"><img src="./img/logo.svg" alt="logo-spotify"></div>
+                <div class="logo"><img src="./img/logo.svg" alt="logo-spotify">
+                    <div class="responsive-logo"><img src="./img/logo-small.svg" alt="small-logo"></div>
+                </div>
                 <nav class="search-navbar">
                     <ul>
                         <li class="home-green"><a href="#"><img src="./img/home.svg" alt="home"><span>Home</span></a>
@@ -126,30 +128,59 @@
                             <h5>Heavy Metal</h5>
                             <h6>Subtitle</h6>
                         </div>
-                </div>
-                <div class="popular-artist">
-                    <h2>Artisti piú popolari</h2>
-                    <h4>Piú ascolti, piú accurati saranno i suggerimenti</h4>
-                    <div class="card-container">
-                        <div class="card"><a href="#"><img class="border-radius-50" src="./img/metal_lifting.jpg" alt="heavymeta"></a>
-                            <h5>Heavy Metal</h5>
-                            <h6>Subtitle</h6>
+                    </div>
+                    <div class="popular-artist">
+                        <h2>Artisti piú popolari</h2>
+                        <h4>Piú ascolti, piú accurati saranno i suggerimenti</h4>
+                        <div class="card-container">
+                            <div class="card"><a href="#"><img class="border-radius-50" src="./img/metal_lifting.jpg"
+                                        alt="heavymeta"></a>
+                                <h5>Heavy Metal</h5>
+                                <h6>Subtitle</h6>
+                            </div>
+                            <div class="card"><a href="#"><img class="border-radius-50" src="./img/metal_lifting.jpg"
+                                        alt="heavymeta"></a>
+                                <h5>Heavy Metal</h5>
+                                <h6>Subtitle</h6>
+                            </div>
                         </div>
-                        <div class="card"><a href="#"><img class="border-radius-50" src="./img/metal_lifting.jpg" alt="heavymeta"></a>
-                            <h5>Heavy Metal</h5>
-                            <h6>Subtitle</h6>
-                        </div>
+                    </div>
                 </div>
-            </div>
+            </div>    
         </section>
     </div>
 
     <!--parte a pie pagina in cui é presente la play bar per il controllo della riproduzione e del volume-->
 
     <section class="bottom-play-bar">
-        <div class="playing-now"><img src="./img/sinister.jpeg" alt="sinister"><h5>Sinister</h5><h6>Brano Nome</h6><i class="fa-regular fa-heart"></i><i class="fa-regular fa-folder"></i>
+        <div class="playing-now">
+            <div class="left-play-now-item">
+                <div class="a">
+                    <img src="./img/sinister.jpeg" alt="sinister">
+                </div>
+                <div class="b">
+                    <h5>Sinister</h5>
+                    <h6>Brano Nome</h6>
+                </div>
+            </div>
+            <div class="right-play-now-item"><i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
+            </div>
         </div>
-        <div class="reproduction-bar"></div>
+        <div class="reproduction-bar">
+            <div class="control-bar">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-rotate-right"></i>
+            </div>
+            <div class="time-bar">
+                <span>0:25</span>
+                <div class="solid-time-bar"></div>
+                <span>4:35</span>
+            </div>
+        </div>
         <div class="volume-bar"></div>
     </section>
 

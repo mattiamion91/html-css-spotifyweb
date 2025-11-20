@@ -80,7 +80,8 @@ li a {
     border-radius: 50%;
 }
 
-.left-playlist-bar a, span {
+.left-playlist-bar a, 
+.left-playlist-bar span {
     padding: 3px 0;
     font-size: 10px;
     color: lightgrey;
@@ -95,6 +96,7 @@ li a {
 }
 
 .left-playlist-bar {
+    overflow: hidden;
     line-height: 25px;
     display: flex;
     flex-direction: column;
@@ -107,6 +109,15 @@ li a {
 }
 
 /*main part l'unica che deve avere una scroll bar*/
+
+.responsive-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
 
 .border-radius-50 {
     border-radius: 50%;
@@ -193,22 +204,41 @@ nav ul li a {
 
 .playing-now {
     max-width: 100px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .playing-now img {
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 .bottom-play-bar {
-    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cornflowerblue;
     height: 100px;
     position: sticky;
     bottom: 0;
+    padding: 0 10px;
+}
+
+.control-bar {
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*@@@@@@@@@@@@@@@@@552x1095@@@@@@@@@@@@@@@@@*/
 
 @media only screen and (max-width: 552px) {
+    
+    .responsive-logo {
+        padding: 15px;
+        display: block;
+    }
+    
     .left-playlist-bar {
         width: 60px;
     }
@@ -219,7 +249,8 @@ nav ul li a {
     }
 
     span,
-    .playlist-bar {
+    .playlist-bar,
+    .logo {
         display: none;
         border-bottom: none;
     }
