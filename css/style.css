@@ -34,6 +34,11 @@ a {
 
 /*left playlist*/
 
+.playlist-bar ul {
+    height: 250px;
+    overflow-y: auto;
+}
+
 ul li span:hover {
     color: white;
     cursor: pointer;
@@ -46,6 +51,8 @@ ul li span:hover {
 }
 
 .home-green {
+    margin-left: -15px;
+    padding-left: 13px;
     border-left: solid 3px greenyellow;
 }
 
@@ -122,10 +129,16 @@ li a {
     border-radius: 50%;
 }
 
-.scrolling-section h2,
-.scrolling-section h4, 
-.scrolling-section h5, 
+.scrolling-section h5 {
+    padding-top: 10px
+}
+
 .scrolling-section h6 {
+    padding-bottom: 0;
+}
+
+.scrolling-section h2,
+.scrolling-section h4 {
     color: white;
     padding: 20px 0;
 }
@@ -168,6 +181,26 @@ nav ul li a {
     opacity: 0.5;
 }
 
+.card a {
+    display: inline-block;
+    position: relative;
+}
+
+.card a i {
+    z-index: 99;    
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card i:hover {
+    color: red;
+    display: none;
+}
+
 .card img {
     width: 100%;
     height: auto;
@@ -187,6 +220,7 @@ nav ul li a {
 }
 
 .upgrade-top-bar {
+    z-index: 999;
     display: flex;
     justify-content: flex-end;
     background: rgba(20, 25, 35, 0.5);
@@ -208,18 +242,28 @@ nav ul li a {
 
 /*barra di riproduzione musicale*/
 
+.control-bar i {
+    padding: 0 20px
+}
+
+.time-bar span {
+    padding: 0 20px;
+    font-size: 8px;
+}
+
 .reproduction-bar {
     width: 35vw;
 }
 
 .volume-bar {
-   
+
     width: 10vw;
     display: flex;
     align-items: center;
 }
 
-.volume-bar-solid {height: 3px;
+.volume-bar-solid {
+    height: 3px;
     width: 100%;
     background-color: lightgray;
     border-radius: 2px;
