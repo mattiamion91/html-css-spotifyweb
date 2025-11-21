@@ -197,7 +197,7 @@ nav ul li a {
 }
 
 .card a i {
-    z-index: 99;    
+    z-index: 99;
     color: white;
     font-size: 50px;
     position: absolute;
@@ -250,10 +250,14 @@ nav ul li a {
     overflow-y: auto;
 }
 
+.bottom-element span {
+    padding-left: 10px
+}
+
 /*barra di riproduzione musicale*/
 
 .control-bar i {
-    padding: 0 20px
+    margin: 0 20px
 }
 
 .time-bar span {
@@ -266,8 +270,7 @@ nav ul li a {
 }
 
 .volume-bar {
-
-    width: 10vw;
+    width: 15%;
     display: flex;
     align-items: center;
 }
@@ -277,13 +280,44 @@ nav ul li a {
     width: 100%;
     background-color: lightgray;
     border-radius: 2px;
+    position: relative;
 }
+
+.volume-bar-solid-part {
+    height: 3px;
+    width: 25%;
+    background-color: white;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+}
+
+.volume-bar-solid-part:hover {
+    background-color: yellowgreen;
+    cursor: pointer;
+}
+
 
 .time-bar .solid-time-bar {
     height: 3px;
     width: 100%;
     background-color: lightgray;
     border-radius: 2px;
+    position: relative;
+}
+
+.time-bar .solid-time-bar-part {
+    height: 3px;
+    width: 25%;
+    background-color: white;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+}
+
+.time-bar .solid-time-bar-part:hover {
+    background-color: yellowgreen;
+    cursor: pointer;
 }
 
 .time-bar {
@@ -293,8 +327,15 @@ nav ul li a {
 }
 
 .right-play-now-item {
+    color: lightgray;
     display: flex;
     align-items: center;
+}
+
+.right-play-now-item .fa-heart:hover,
+.right-play-now-item .fa-folder:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .left-play-now-item a {
@@ -340,7 +381,8 @@ nav ul li a {
     width: 60px;
 }
 
-.b { padding-left: 10px;
+.b {
+    padding-left: 10px;
 }
 
 .b h6 {
@@ -351,6 +393,10 @@ nav ul li a {
 .b h6:hover {
     color: white;
     cursor: pointer;
+}
+
+.volume-bar i {
+    margin-right:20px;
 }
 
 /*@@@@@@@@@@@@@@@@@552x1095@@@@@@@@@@@@@@@@@*/
@@ -386,8 +432,13 @@ nav ul li a {
         flex-direction: column;
         align-items: center;
     }
-     
+
     .left-play-now-item .b {
         position: absolute;
+    }
+
+    .right-play-now-item {
+        display: block;
+
     }
 }
