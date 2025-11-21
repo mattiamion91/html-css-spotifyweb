@@ -34,9 +34,19 @@ a {
 
 /*left playlist*/
 
+.playlist-bar h3 {
+    color: white;
+    font-size: 15px;
+}
+
 .playlist-bar ul {
     height: 250px;
     overflow-y: auto;
+}
+
+.btn-hover:hover {
+    color: white;
+    cursor: pointer;
 }
 
 ul li span:hover {
@@ -223,7 +233,7 @@ nav ul li a {
     z-index: 999;
     display: flex;
     justify-content: flex-end;
-    background: rgba(20, 25, 35, 0.5);
+    background: rgba(28, 11, 18, 0.5);
     height: 100px;
     position: sticky;
     top: 0;
@@ -277,6 +287,7 @@ nav ul li a {
 }
 
 .time-bar {
+    padding-top: 20px;
     display: flex;
     align-items: center;
 }
@@ -296,7 +307,7 @@ nav ul li a {
 }
 
 .playing-now {
-    max-width: 100px;
+    width: 190px;
     display: flex;
     justify-content: space-between;
 }
@@ -327,6 +338,19 @@ nav ul li a {
 
 .a {
     width: 60px;
+}
+
+.b { padding-left: 10px;
+}
+
+.b h6 {
+    color: lightgrey;
+    font-size: 8px;
+}
+
+.b h6:hover {
+    color: white;
+    cursor: pointer;
 }
 
 /*@@@@@@@@@@@@@@@@@552x1095@@@@@@@@@@@@@@@@@*/
@@ -361,5 +385,9 @@ nav ul li a {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+     
+    .left-play-now-item .b {
+        position: absolute;
     }
 }
